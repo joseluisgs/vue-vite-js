@@ -1,23 +1,21 @@
-<script>
+<script setup>
+// Probando el script setup para Vue3
 import { ref } from 'vue'
+import UserStore from '../store/Userstore'
 
-export default {
-  name: 'HelloWorld',
-  
-  props: {
-    msg: String,
-  },
+// De esta manera puedo pasar propiedades.
+const props = defineProps({
+  msg: String
+})
 
-  setup() {
-    const count = ref(0)
-    return { count }
-  },
-}
+const userStore = UserStore()
+const count = ref(0)
 
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>{{ props.msg }}</h1>
+  <h2>by: {{ userStore.name }}</h2>
 
   <p>
     Recommended IDE setup:
@@ -50,7 +48,13 @@ export default {
     type="button"
     @click="count++"
   >
-    count is: {{ count }}
+    Local counter is: {{ count }}
+  </button>
+  <button
+    type="button"
+    @click="userStore.counter++"
+  >
+    Stored counter is: {{ userStore.counter }}
   </button>
   <p>
     Edit

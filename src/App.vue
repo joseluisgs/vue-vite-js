@@ -17,6 +17,17 @@
   </router-view>
 </template>
 
+<script setup>
+import { onBeforeMount } from 'vue'
+import ThemeStore from './store/ThemeStore'
+
+const themeStore = ThemeStore()
+onBeforeMount(() => {
+  themeStore.initTheme()
+})
+
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -25,7 +36,6 @@
   text-align: center;
   color: #2c3e50;
 
-  
 }
 
 #nav {
