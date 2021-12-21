@@ -56,7 +56,7 @@ const count = ref(0)
 
     <button
       type="button"
-      class="bg-gray-300 hover:bg-green-100 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center m-2"
+      class="rounded font-bold bg-gray-300 m-2 shadow-md py-2 px-4 text-gray-800 inline-flex items-center hover:bg-green-100"
       @click="count++"
     >
       <Icon
@@ -67,7 +67,7 @@ const count = ref(0)
     </button>
     <button
       type="button"
-      class="bg-gray-300 hover:bg-green-100 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center m-2"
+      class="rounded font-bold bg-gray-300 m-2 shadow-md py-2 px-4 text-gray-800 inline-flex items-center hover:bg-green-100"
       @click="userStore.counter++"
     >
       <Icon

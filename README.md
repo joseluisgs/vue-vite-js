@@ -1,9 +1,9 @@
-# Vite Vue
-Plantilla de proyectos Vue3.js para Vite, con Pinia, Vue-Router, WindiCSS (Tailwind) e Iconify.
+# Vue Vite JS
+Plantilla de proyectos Vue.js para Vite, con Pinia, Vue-Router, WindiCSS (Tailwind) e Iconify sobre JavaScript.
 
 [![Vue Ready](https://img.shields.io/badge/Vue.js%20v3-%20Ready-%2342b983)](https://es.vuejs.org/)
 [![LISENCE](https://img.shields.io/badge/Lisence-MIT-green)]()
-![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vite-vue)
+![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vue-vite-js)
 
 
 ![imagen](https://miro.medium.com/max/1400/1*C8xdSMN_IkeXDsTLt6EACA.png)
@@ -49,5 +49,4 @@ Codificado con :sparkling_heart: por [José Luis González Sánchez](https://twi
 
 
 ## Licencia
-
 Este proyecto está licenciado bajo licencia **MIT**, si desea saber más, visite el fichero [LICENSE](./LICENSE) para su uso docente y educativo.

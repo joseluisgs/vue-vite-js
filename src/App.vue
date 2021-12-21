@@ -1,17 +1,18 @@
 <template>
   <div
     id="nav"
-    class="flex justify-center p-10"
+    class="flex p-10 justify-center"
   >
     <router-link
       to="/"
-      class="font-semibold text-gray-500 hover:text-gray-300"
+      class="font-semibold text-gray-400 hover:text-green-200"
     >
       Home
-    </router-link> |
+    </router-link>
+    |
     <router-link
       to="/about"
-      class="font-semibold text-gray-500 hover:text-gray-300"
+      class="font-semibold text-gray-400 hover:text-green-200"
     >
       About
     </router-link>
@@ -22,12 +23,12 @@
       <Icon
         v-if="themeStore.theme === 'light'"
         icon="feather:moon"
-        class="m-1 w-5 text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light"
+        class="m-1 text-gray-400 w-5 hover:text-indigo-700"
       />
       <Icon
         v-else
         icon="feather:sun"
-        class="m-1 w-5 text-gray-200 hover:text-gray-50"
+        class="m-1 text-gray-200 w-5 hover:text-yellow-300"
       />
     </a>
   </div>
@@ -55,11 +56,9 @@ const toggleTheme = () => {
   const newTheme = themeStore.theme === 'light' ? 'dark' : 'light'
   themeStore.setTheme(newTheme)
 }
-
 </script>
 
 <style>
-
 #nav a.router-link-exact-active {
   color: #42b983;
 }
