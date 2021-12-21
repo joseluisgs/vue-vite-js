@@ -15,57 +15,74 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ props.msg }}</h1>
-  <h2>by: {{ userStore.name }}</h2>
-  <Icon icon="mdi-light:home" />
+  <div class="text-center">
+    <h1 class="text-2xl">
+      {{ props.msg }}
+    </h1>
+    <h2 class="text-xl">
+      by: {{ userStore.name }}
+    </h2>
 
-  <p>
-    Recommended IDE setup:
-    <a
-      href="https://code.visualstudio.com/"
-      target="_blank"
-    >VSCode</a>
-    +
-    <a
-      href="https://github.com/johnsoncodehk/volar"
-      target="_blank"
-    >Volar</a>
-  </p>
+    <p class="text-sm pt-1">
+      Recommended IDE setup:
+      <a
+        href="https://code.visualstudio.com/"
+        target="_blank"
+        class="text-gray-400 hover:text-green-400"
+      >VSCode</a>
+      +
+      <a
+        href="https://github.com/johnsoncodehk/volar"
+        target="_blank"
+        class="text-gray-400 hover:text-green-400"
+      >Volar</a>
+    </p>
 
-  <p>
-    <a
-      href="https://vitejs.dev/guide/features.html"
-      target="_blank"
+    <p class="text-sm pt-1">
+      <a
+        href="https://vitejs.dev/guide/features.html"
+        target="_blank"
+        class="text-gray-400 hover:text-green-400"
+      >
+        Vite Documentation
+      </a>
+      |
+      <a
+        href="https://v3.vuejs.org/"
+        target="_blank"
+        class="text-gray-400 hover:text-green-400"
+      >Vue 3 Documentation</a>
+    </p>
+
+    <button
+      type="button"
+      class="bg-gray-300 hover:bg-green-100 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center m-2"
+      @click="count++"
     >
-      Vite Documentation
-    </a>
-    |
-    <a
-      href="https://v3.vuejs.org/"
-      target="_blank"
-    >Vue 3 Documentation</a>
-  </p>
-
-  <button
-    type="button"
-    @click="count++"
-  >
-    Local counter is: {{ count }}
-  </button>
-  <button
-    type="button"
-    @click="userStore.counter++"
-  >
-    Stored counter is: {{ userStore.counter }}
-  </button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+      <Icon
+        icon="ic:outline-local-offer"
+        class="mr-1"
+      />
+      Local counter is: {{ count }}
+    </button>
+    <button
+      type="button"
+      class="bg-gray-300 hover:bg-green-100 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center m-2"
+      @click="userStore.counter++"
+    >
+      <Icon
+        icon="carbon:block-storage"
+        class="mr-1"
+      />
+      Stored counter is: {{ userStore.counter }}
+    </button>
+    <p class="text-xs">
+      Edit
+      <code class="code">components/HelloWorld.vue</code> to test hot module replacement.
+    </p>
+  </div>
 </template>
 
 <style scoped>
-a {
-  color: #42b983;
-}
+
 </style>
