@@ -1,6 +1,7 @@
 <script setup>
 // Probando el script setup para Vue3
 import { ref } from 'vue'
+import { Icon } from '@iconify/vue'
 import UserStore from '../store/Userstore'
 
 // De esta manera puedo pasar propiedades.
@@ -16,6 +17,7 @@ const count = ref(0)
 <template>
   <h1>{{ props.msg }}</h1>
   <h2>by: {{ userStore.name }}</h2>
+  <Icon icon="mdi-light:home" />
 
   <p>
     Recommended IDE setup:
