@@ -1,14 +1,7 @@
 <template>
   <div class="home container mx-auto px-4">
     <div class="h-60 mb-8 flex justify-center">
-      <transition
-        enter-active-class="transition ease-out duration-1000 transform"
-        enter-from-class="-translate-x-100 opacity-0"
-        enter-to-class="translate-x-0 opacity-100"
-        leave-active-class="transition ease-in duration-1000 transform"
-        leave-from-class="opacity-100"
-        leave-to-class="opacity-0"
-      >
+      <transition name="fade">
         <img
           alt="Vue logo"
           src="../assets/images/logo.png"
@@ -30,3 +23,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.fade-enter-active {
+  transition: opacity 1s ease-in-out;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-enter {
+  opacity: 0;
+}
+</style>
