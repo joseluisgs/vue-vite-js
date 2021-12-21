@@ -1,7 +1,53 @@
-# Vue 3 + Vite
+# Vite Vue
+Plantilla de proyectos Vue3.js para Vite, con Pinia, Vue-Router, WindiCSS (Tailwind) e Iconify.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[![Vue Ready](https://img.shields.io/badge/Vue.js%20v3-%20Ready-%2342b983)](https://es.vuejs.org/)
+[![LISENCE](https://img.shields.io/badge/Lisence-MIT-green)]()
+![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vite-vue)
 
-## Recommended IDE Setup
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+![imagen](https://miro.medium.com/max/1400/1*C8xdSMN_IkeXDsTLt6EACA.png)
+
+## Uso
+```shell
+npm install
+npm start # o npm run dev
+npm run build
+npm run preview
+npm run lint
+```
+
+## Autor
+
+Codificado con :sparkling_heart: por [José Luis González Sánchez](https://twitter.com/joseluisgonsan)
+
+[![Twitter](https://img.shields.io/twitter/follow/joseluisgonsan?style=social)](https://twitter.com/joseluisgonsan)
+[![GitHub](https://img.shields.io/github/followers/joseluisgs?style=social)](https://github.com/joseluisgs)
+
+### Contacto
+<p>
+  Cualquier cosa que necesites házmelo saber por si puedo ayudarte 💬.
+</p>
+<p>
+    <a href="https://twitter.com/joseluisgonsan" target="_blank">
+        <img src="https://i.imgur.com/U4Uiaef.png" 
+    height="30">
+    </a> &nbsp;&nbsp;
+    <a href="https://github.com/joseluisgs" target="_blank">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" 
+    height="30">
+    </a> &nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/joseluisgonsan" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" 
+    height="30">
+    </a>  &nbsp;&nbsp;
+    <a href="https://joseluisgs.github.io/" target="_blank">
+        <img src="https://joseluisgs.github.io/favicon.png" 
+    height="30">
+    </a>
+</p>
+
+
+## Licencia
+
+Este proyecto está licenciado bajo licencia **MIT**, si desea saber más, visite el fichero [LICENSE](./LICENSE) para su uso docente y educativo.
