@@ -10,7 +10,7 @@ const ThemeStore = defineStore({
   actions: {
     /**
      * Cambia el tema con la cadena que tengamos
-     * @param {String} newTheme
+     * @param {string} newTheme
      */
     setTheme (newTheme) {
       this.theme = newTheme

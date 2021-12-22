@@ -8,7 +8,7 @@
         >
       </transition>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to Your Vue.js Vite JS App" />
   </div>
 </template>
 

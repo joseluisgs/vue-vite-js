@@ -19,8 +19,17 @@ const count = ref(0)
     <h1 class="text-2xl">
       {{ props.msg }}
     </h1>
-    <h2 class="text-xl">
+    <h2 class="text-xl m-2">
       by: {{ userStore.name }}
+      <a
+        href="https://github.com/joseluisgs"
+        target="_blank"
+        class="hover:text-green-400"
+      >
+        <Icon
+          icon="ci:github"
+        />
+      </a>
     </h2>
 
     <p class="text-sm pt-1">
